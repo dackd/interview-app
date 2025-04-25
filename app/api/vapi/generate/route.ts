@@ -29,7 +29,8 @@ export const POST = async (req: Request) => {
     `,
     });
 
-    console.log("Questions generated:", questions);
+    console.log("body", { type, role, level, techstack, amount, userid });
+    console.log("questions", questions);
 
     const interview = {
       role,
